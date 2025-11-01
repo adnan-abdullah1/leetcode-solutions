@@ -14,9 +14,7 @@ func search(arr []int, key int) bool {
 			h--
             continue
 		}
-		if l > h {
-			return false
-		}
+
 		// find which part is sorted
 		if arr[l] <= arr[mid] {
 			// check if key lies in this part

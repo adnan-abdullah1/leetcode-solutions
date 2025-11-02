@@ -1,75 +1,150 @@
-### 🧩 Problem: Find Duplicates with Limited Memory
-
-You have an array containing integers in the range **1 to n**, where **n = 32,000**.
-The array **may contain duplicate entries**, and **you don’t know n** in advance.
-
-However, you have access to **only 4 KB of memory**.
-Your task is to **print all duplicate elements** in the array.
+Perfect ✅ Here’s a complete **`README.md`** that captures the **question, reasoning, and final Go solution** — plus all the intuition you built step by step.
 
 ---
 
-### 💡 Key Constraints
+````markdown
+# 🧮 Find Duplicates with Only 4KB of Memory
 
-* Each integer ranges from **1 to 32,000**.
-* You have **only 4 KB (4096 bytes)** of memory available.
-* Each integer typically takes **4 bytes**, so you cannot store the entire array in memory.
-* You may assume the input can be read sequentially (e.g., from a stream or file).
+### 💡 Problem Statement
+You are given an array that contains integers ranging from **1 to 32,000**.  
+The array **may have duplicate entries**, but you **do not know what `n` is** (i.e., the array can be of any length).  
 
----
-
-### 🎯 Intuition
-
-We cannot store all numbers directly, but we can **track which numbers have been seen** using **bits** instead of full integers.
-
-* 1 byte = 8 bits
-* 4 KB = 4096 bytes = **4096 × 8 = 32,768 bits**
-* That’s **enough bits to represent all numbers from 1 to 32,000**
-
-So we create a **bit vector** — an array of bytes, where each bit represents whether a number has been seen.
+Your goal is to **print all duplicate elements**, using **no more than 4 KB of memory**.
 
 ---
 
-### 🧠 Bitwise Idea
+### 🧠 Intuition Behind the Solution
 
-For each number `v` in the array:
+- 4 KB = **4096 bytes** = **4096 × 8 = 32,768 bits**
+- There are **32,000 possible numbers**, each between 1 and 32,000.  
+  So, we can **assign 1 bit per number** — perfect fit!
 
-1. Compute which **byte** it belongs to:
-   `byteIndex = (v - 1) / 8`
-2. Compute which **bit** inside that byte:
-   `bitIndex = (v - 1) % 8`
-3. To **check if it’s seen**:
-
-   ```go
-   if seenBits[byteIndex] & (1 << bitIndex) != 0 {
-       fmt.Println("duplicate:", v)
-   }
-   ```
-4. Otherwise, **mark it as seen**:
-
-   ```go
-   seenBits[byteIndex] |= 1 << bitIndex
-   ```
+Each bit represents whether we have **seen** a particular number before.
 
 ---
 
-### 🧮 Example
+### ⚙️ Core Idea
 
-For `v = 6`:
+We maintain a **bit vector** where:
 
-* `byteIndex = 0`
-* `bitIndex = 5`
-* To set bit 5 → `seenBits[0] |= 1 << 5` (marks 6 as seen)
-* If 6 appears again → `seenBits[0] & (1 << 5)` will be nonzero, so we detect a duplicate.
+- **Each bit** corresponds to a number (1 → 32,000).
+- **If the bit is 1**, it means we’ve seen that number.
+- **If the bit is 0**, it means we haven’t.
+
+---
+
+### 🧩 Key Operations
+
+#### Mark a number as seen
+```go
+mem[byteIndex] |= 1 << bitIndex
+````
+
+* `1 << bitIndex` → creates a mask like `00010000`, setting just one bit.
+* `|=` → flips that bit **on** in the byte.
+
+#### Check if a number has already been seen
+
+```go
+if mem[byteIndex] & (1 << bitIndex) != 0 {
+    fmt.Println("duplicate:", num)
+}
+```
+
+* `&` → checks whether that bit was already set.
+* If non-zero, it’s a **duplicate**.
 
 ---
 
-### ✅ Summary
+### 🧮 Calculating Byte and Bit Positions
 
-| Concept         | Operation                 | Meaning                               |                     |
-| --------------- | ------------------------- | ------------------------------------- | ------------------- |
-| `1 << bitIndex` | Left shift                | Set a single bit mask                 |                     |
-| `               | =`                        | Bitwise OR                            | Mark number as seen |
-| `&`             | Bitwise AND               | Check if bit already set              |                     |
-| `/` and `%`     | Integer division, modulus | Locate byte and bit within the vector |                     |
+For a given number `num`:
+
+```go
+byteIndex := (num - 1) / 8  // which byte
+bitIndex := (num - 1) % 8   // which bit inside the byte
+```
+
+This allows us to efficiently locate the bit that corresponds to `num`.
 
 ---
+
+### 🧑‍💻 Go Implementation
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	arr := []int{3, 7, 3, 15, 7, 10, 15, 1, 32000, 32000}
+	mem := make([]byte, 4000) // 4000 bytes = 32,000 bits
+
+	for _, num := range arr {
+		byteIndex := (num - 1) / 8
+		bitIndex := (num - 1) % 8
+
+		if mem[byteIndex]&(1<<bitIndex) != 0 {
+			fmt.Println("Duplicate:", num)
+		} else {
+			mem[byteIndex] |= 1 << bitIndex
+		}
+	}
+}
+```
+
+---
+
+### 🧩 Example Walkthrough
+
+Let’s say `num = 6`
+
+| Step | Expression                | Binary      | Meaning         |                       |
+| ---- | ------------------------- | ----------- | --------------- | --------------------- |
+| 1    | `byteIndex = (6-1)/8 = 0` | → Byte 0    | First byte      |                       |
+| 2    | `bitIndex = (6-1)%8 = 5`  | → Bit 5     | Sixth bit       |                       |
+| 3    | `1 << 5`                  | `00100000`  | Set the 6th bit |                       |
+| 4    | `mem[0]                   | = 00100000` | `00100000`      | Mark number 6 as seen |
+
+Next time when `6` comes again:
+`mem[0] & 00100000` ≠ 0 → Duplicate found ✅
+
+---
+
+### 🧩 Why This Problem Is in “Sorting and Searching”
+
+Even though it’s implemented via **bit manipulation**,
+it’s conceptually a **search problem** —
+we’re efficiently *searching* for duplicates while minimizing memory usage.
+
+---
+
+### ✅ Takeaways
+
+* 1 bit per number = memory-efficient tracking.
+* Use `|` to set bits, `&` to check bits.
+* `<<` moves a single `1` into the bit position you want.
+* Brilliant example of **space-time tradeoff** in algorithm design.
+
+---
+
+### 🗂️ File Info
+
+| File                                 | Purpose                           |
+| ------------------------------------ | --------------------------------- |
+| `find-duplicates-with-bit-vector.go` | Go code implementation            |
+| `README.md`                          | Problem explanation and intuition |
+
+---
+
+**Author:** *Adnan Abdullah*
+**Concept learned:** Bit manipulation for memory optimization (from “Cracking the Coding Interview”)
+**Tags:** `bitwise`, `searching`, `duplicates`, `memory-efficient`, `golang`
+
+```
+
+---
+
+Would you like me to include **ASCII illustrations** of how bits flip (like `00000000 → 00100000`) in the README too?  
+It makes the visualization even easier to recall later.
+```

@@ -1,37 +1,49 @@
+// I did this myself gpt cleaned this code
+
 func searchMatrix(matrix [][]int, target int) bool {
-	rows := len(matrix) - 1 // 0
-	cols := len(matrix[0]) - 1 // 1 
+	//  Guard clause for empty matrix
+	if len(matrix) == 0 || len(matrix[0]) == 0 {
+		return false
+	}
 
-	lr := 0 
-	hr := rows // 0
+	rows := len(matrix)
+	cols := len(matrix[0])
 
-	for lr <= hr {
-		midRow := (lr + hr) / 2 //0
+	lowRow, highRow := 0, rows-1
+
+	// \U0001f539 Step 1: Binary search on rows
+	for lowRow <= highRow {
+		midRow := (lowRow + highRow) / 2
+
+		// If target is smaller than first element in this row → go up
 		if target < matrix[midRow][0] {
-			hr = midRow - 1
-			continue
-		} else if target > matrix[midRow][len(matrix[0])-1] {
-			lr = midRow + 1
+			highRow = midRow - 1
 			continue
 		}
 
-		lc := 0
-		hc := cols //1
+		// If target is greater than last element in this row → go down
+		if target > matrix[midRow][cols-1] {
+			lowRow = midRow + 1
+			continue
+		}
 
-		for lc <= hc {
-			midCol := (lc + hc) / 2 // 0, 1
-
+		// \U0001f539 Step 2: Binary search inside the identified row
+		lowCol, highCol := 0, cols-1
+		for lowCol <= highCol {
+			midCol := (lowCol + highCol) / 2
 			if matrix[midRow][midCol] == target {
 				return true
-			} else if target > matrix[midRow][midCol] {
-				lc = midCol + 1 // 1
+			}
+			if matrix[midRow][midCol] < target {
+				lowCol = midCol + 1
 			} else {
-				hc = midCol - 1
+				highCol = midCol - 1
 			}
 		}
 
+		
 		return false
-
 	}
+
 	return false
 }

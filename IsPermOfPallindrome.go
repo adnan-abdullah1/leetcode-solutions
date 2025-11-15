@@ -1,12 +1,11 @@
 package main
-
+ // other solution using map
+ // this is without map
+ // book:60
 func IsPermOfPallindrome(str string) bool{
 	table := [26]int{}
 	oddCount:=0
 	for _,v:=range str {
-		if v==' '{
-			continue
-		}
 
 		if v >= 'A' && v<='Z'{
 			v = v + ('a'-'A')

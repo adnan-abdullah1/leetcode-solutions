@@ -18,6 +18,7 @@
 // third solution
 // insert elements to map
 // then look if target-arr[i] is in map
+// this can be done in one pass also means (fill map and check in map at same time)
 func twoSum(nums []int, target int) []int {
 	mp := make(map[int]int, len(nums))
 
@@ -33,7 +34,7 @@ func twoSum(nums []int, target int) []int {
             continue
         }
 
-        if v != i{
+        if v != i{ // took care of not returning same index ex [1,1]
             return []int{i,v}
         }
         

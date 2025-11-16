@@ -11,14 +11,22 @@ func sortedSquares(nums []int) []int {
 
     ans := make([]int,len(nums))
 
-    if negIndex == -1{
-        m := len(nums)-1
-        for _,v := range nums{
-            ans[m]=v
-            m--
+    if negIndex == -1{ // means there where only negative numser
+        // 5,4,3,2,1
+        i := 0
+        j := len(nums)-1
+        for i <= j{
+            nums[i],nums[j]=nums[j],nums[i]
+            i++
+            j--
         }
-        return ans
+        return nums
     }
+
+    if negIndex==0{
+        return nums
+    }
+
 	// negIndex - 1 to 0 are sorted
     // negIndex to len -1 are sorted 
     i:=0

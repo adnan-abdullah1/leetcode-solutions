@@ -1,3 +1,4 @@
+// this solution is little bit compact than second
 func sortedSquares(nums []int) []int {
 	for i, v := range nums {
 		nums[i] = v * v

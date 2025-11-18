@@ -1,39 +1,41 @@
 func threeSum(nums []int) [][]int {
-	ans := [][]int{}
-	ansMP := make(map[string]int, len(nums))
+    results := [][]int{}
+    seenTriplets := make(map[string]bool) // stores unique triplet signatures
 
-	for i := 0; i < len(nums)-2; i++ {
-		// fix for [0,0,0,0............]
-		// otherwise without this tle
-		if i > 0 && nums[i] == nums[i-1] {
-			continue
-		}
-		mp := make(map[int]int, len(nums))
+    for i := 0; i < len(nums)-2; i++ {
 
-		for j := i + 1; j < len(nums); j++ {
-			need := 0 - nums[i] - nums[j]
+        // skip duplicate
+        // ex: [0,0,0,0,0,0,0]
+        if i > 0 && nums[i] == nums[i-1] {
+            continue
+        }
 
-			ind, ok := mp[need]
-			if ok {
-				triplet := []int{nums[i], nums[j], nums[ind]}
+        valueToIndex := make(map[int]int) // used for two-sum lookup
 
-				sort.Ints(triplet)
+        for j := i + 1; j < len(nums); j++ {
+            needed := 0 -(nums[i] + nums[j]) // value needed to complete triplet
 
-				hashKey := fmt.Sprintf("%d-%d-%d", triplet[0], triplet[1], triplet[2])
-				_, ok := ansMP[hashKey]
-				if !ok {
-					ansMP[hashKey] = 1
-					ans = append(ans, triplet)
-				}
+            if kIndex, found := valueToIndex[needed]; found {
 
-			} else {
-				mp[nums[j]] = j
-			}
-		}
-	}
+                triplet := []int{nums[i], nums[j], nums[kIndex]}
+                sort.Ints(triplet)
 
-	return ans
+                key := fmt.Sprintf("%d-%d-%d", triplet[0], triplet[1], triplet[2])
+
+                if !seenTriplets[key] {
+                    seenTriplets[key] = true
+                    results = append(results, triplet)
+                }
+
+            } else {
+                valueToIndex[nums[j]] = j
+            }
+        }
+    }
+
+    return results
 }
+
 
 // func threeSum(nums []int) [][]int {
 // 	ans := [][]int{}

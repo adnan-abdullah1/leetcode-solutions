@@ -1,3 +1,4 @@
+// n square solution
 func trap(arr []int) int {
     trapped := 0
 	for i := range arr {
@@ -28,3 +29,9 @@ func getRightMax(arr []int, i int) int {
 	}
 	return maxNo
 }
+
+// better solution can be by computing 
+// premax sum, and postmax sum for every element
+// tc: o(n), sc: o(n)
+
+// most optimal soution is two pointer

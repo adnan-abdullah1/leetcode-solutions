@@ -1,4 +1,3 @@
-// otimal
 
 func threeSum(arr []int) [][]int {
 	target := 0
@@ -41,6 +40,46 @@ func threeSum(arr []int) [][]int {
 	return ans
 
 }
+
+
+// func threeSum(nums []int) [][]int {
+//     results := [][]int{}
+//     seenTriplets := make(map[string]bool) // stores unique triplet signatures
+
+//     for i := 0; i < len(nums)-2; i++ {
+
+//         // skip duplicate
+//         // ex: [0,0,0,0,0,0,0]
+//         if i > 0 && nums[i] == nums[i-1] {
+//             continue
+//         }
+
+//         valueToIndex := make(map[int]int) // used for two-sum lookup
+
+//         for j := i + 1; j < len(nums); j++ {
+//             needed := 0 -(nums[i] + nums[j]) // value needed to complete triplet
+
+//             if kIndex, found := valueToIndex[needed]; found {
+
+//                 triplet := []int{nums[i], nums[j], nums[kIndex]}
+//                 sort.Ints(triplet)
+
+//                 key := fmt.Sprintf("%d-%d-%d", triplet[0], triplet[1], triplet[2])
+
+//                 if !seenTriplets[key] {
+//                     seenTriplets[key] = true
+//                     results = append(results, triplet)
+//                 }
+
+//             } else {
+//                 valueToIndex[nums[j]] = j
+//             }
+//         }
+//     }
+
+//     return results
+// }
+
 
 // func threeSum(nums []int) [][]int {
 // 	ans := [][]int{}

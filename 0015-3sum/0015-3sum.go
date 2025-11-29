@@ -1,3 +1,5 @@
+
+// better with set for duplicate check
 func threeSum(nums []int) [][]int {
     results := [][]int{}
     seenTriplets := make(map[string]bool) // stores unique triplet signatures

@@ -1,43 +1,46 @@
+// otimal
 
-// better with set for duplicate check
-func threeSum(nums []int) [][]int {
-    results := [][]int{}
-    seenTriplets := make(map[string]bool) // stores unique triplet signatures
+func threeSum(arr []int) [][]int {
+	target := 0
+	ans := [][]int{}
 
-    for i := 0; i < len(nums)-2; i++ {
+	sort.Ints(arr)
 
-        // skip duplicate
-        // ex: [0,0,0,0,0,0,0]
-        if i > 0 && nums[i] == nums[i-1] {
-            continue
-        }
+	for i := 0; i < len(arr)-1; i++ {
+		if i > 0 && arr[i] == arr[i-1] {
+			continue
+		}
 
-        valueToIndex := make(map[int]int) // used for two-sum lookup
+		j := i + 1
+		k := len(arr) - 1
 
-        for j := i + 1; j < len(nums); j++ {
-            needed := 0 -(nums[i] + nums[j]) // value needed to complete triplet
+		for j < k {
+			s := arr[i] + arr[j] + arr[k]
 
-            if kIndex, found := valueToIndex[needed]; found {
+			if s < target {
+				j++
+			} else if s > target {
+				k--
+			} else {
+				// we got triplet
+				ans = append(ans, []int{arr[i], arr[j], arr[k]})
+				j++
+				k--
+				for j < k && arr[j] == arr[j-1] {
+					j++
+				}
+				for j < k && arr[k] == arr[k+1] {
+					k--
+				}
 
-                triplet := []int{nums[i], nums[j], nums[kIndex]}
-                sort.Ints(triplet)
+			
+			}
+		}
 
-                key := fmt.Sprintf("%d-%d-%d", triplet[0], triplet[1], triplet[2])
+	}
+	return ans
 
-                if !seenTriplets[key] {
-                    seenTriplets[key] = true
-                    results = append(results, triplet)
-                }
-
-            } else {
-                valueToIndex[nums[j]] = j
-            }
-        }
-    }
-
-    return results
 }
-
 
 // func threeSum(nums []int) [][]int {
 // 	ans := [][]int{}

@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [1019-squares-of-a-sorted-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1019-squares-of-a-sorted-array) |
+| [1470-shuffle-the-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1470-shuffle-the-array) |
 | [1929-concatenation-of-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1929-concatenation-of-array) |
 ## Hash Table
 |  |

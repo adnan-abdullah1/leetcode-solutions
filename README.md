@@ -19,6 +19,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0283-move-zeroes](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0283-move-zeroes) |
+| [0485-max-consecutive-ones](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0485-max-consecutive-ones) |
 | [0739-daily-temperatures](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |

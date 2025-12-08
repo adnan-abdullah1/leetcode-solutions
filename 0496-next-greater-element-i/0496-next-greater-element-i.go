@@ -24,6 +24,5 @@ func nextGreaterElement(nums1 []int, arr []int) []int {
         ans = append(ans, mp[v])
     }
 
-    fmt.Println(ans)
     return ans
 }

@@ -23,6 +23,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0485-max-consecutive-ones](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
@@ -91,6 +92,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0402-remove-k-digits](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0496-next-greater-element-i](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
+| [0735-asteroid-collision](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0739-daily-temperatures](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
@@ -116,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [0735-asteroid-collision](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0735-asteroid-collision) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
 | [1441-build-an-array-with-stack-operations](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1441-build-an-array-with-stack-operations) |
 | [1929-concatenation-of-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1929-concatenation-of-array) |

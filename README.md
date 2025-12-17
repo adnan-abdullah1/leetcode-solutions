@@ -27,6 +27,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0739-daily-temperatures](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0739-daily-temperatures) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [0946-validate-stack-sequences](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0946-validate-stack-sequences) |
+| [1004-max-consecutive-ones-iii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 | [1019-squares-of-a-sorted-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 | [1441-build-an-array-with-stack-operations](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1441-build-an-array-with-stack-operations) |
 | [1470-shuffle-the-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1470-shuffle-the-array) |
@@ -60,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [1004-max-consecutive-ones-iii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Matrix
 |  |
 | ------- |
@@ -132,4 +134,9 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
+| [1004-max-consecutive-ones-iii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
+## Prefix Sum
+|  |
+| ------- |
+| [1004-max-consecutive-ones-iii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 <!---LeetCode Topics End-->

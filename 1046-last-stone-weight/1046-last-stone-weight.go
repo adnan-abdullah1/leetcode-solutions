@@ -1,31 +1,35 @@
 type MaxHeap []int
 
-func (h *MaxHeap) Len() int {
-	return len(*h)
-}
-
-func (h *MaxHeap) Less(i, j int) bool {
-	return (*h)[i] > (*h)[j] // max heap
-}
-
-func (h *MaxHeap) Swap(i, j int) {
-	(*h)[i], (*h)[j] = (*h)[j], (*h)[i]
-}
-
 func (h *MaxHeap) Push(x any) {
 	*h = append(*h, x.(int))
 }
 
 func (h *MaxHeap) Pop() any {
-	old := *h
-	n := len(old)
-	x := old[n-1]
-	*h = old[:n-1]
-	return x
+	if len(*h) == 0 {
+		return -1
+	}
+
+	d := (*h)[len(*h)-1]
+	*h = (*h)[:len(*h)-1]
+	return d
+}
+
+func (h *MaxHeap) Len() int {
+	return len(*h)
+}
+
+func (h *MaxHeap) Less(i, j int) bool {
+	return (*h)[i] > (*h)[j]
+}
+
+// Swap swaps the elements with indexes i and j.
+func (h *MaxHeap) Swap(i, j int) {
+	(*h)[i], (*h)[j] = (*h)[j], (*h)[i]
 }
 
 func lastStoneWeight(stones []int) int {
 	h := &MaxHeap{}
+
 	heap.Init(h)
 
 	for _, v := range stones {
@@ -33,11 +37,11 @@ func lastStoneWeight(stones []int) int {
 	}
 
 	for h.Len() > 1 {
-		n1 := heap.Pop(h).(int)
-		n2 := heap.Pop(h).(int)
+		v1 := heap.Pop(h).(int) 
+		v2 := heap.Pop(h).(int) 
 
-		if n1 != n2 {
-			heap.Push(h, n1-n2)
+		if v1 != v2 {
+			heap.Push(h, v1-v2)
 		}
 	}
 
@@ -46,4 +50,3 @@ func lastStoneWeight(stones []int) int {
 	}
 	return (*h)[0]
 }
-

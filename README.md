@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
 | [0283-move-zeroes](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0283-move-zeroes) |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0485-max-consecutive-ones](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0485-max-consecutive-ones) |
 | [0496-next-greater-element-i](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0503-next-greater-element-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0503-next-greater-element-ii) |
@@ -44,6 +45,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0001-two-sum) |
 | [0003-longest-substring-without-repeating-characters](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0496-next-greater-element-i](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0496-next-greater-element-i) |
 | [0560-subarray-sum-equals-k](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0560-subarray-sum-equals-k) |
 | [0930-binary-subarrays-with-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0930-binary-subarrays-with-sum) |
@@ -63,6 +65,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0015-3sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0015-3sum) |
 | [0018-4sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0018-4sum) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
 | [1019-squares-of-a-sorted-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 ## Binary Search
@@ -83,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 ## Two Pointers
 |  |
 | ------- |
@@ -163,5 +167,18 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Heap (Priority Queue)
 |  |
 | ------- |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [1046-last-stone-weight](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1046-last-stone-weight) |
+## Bucket Sort
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Counting
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
+## Quickselect
+|  |
+| ------- |
+| [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 <!---LeetCode Topics End-->

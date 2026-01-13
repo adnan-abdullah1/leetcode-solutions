@@ -38,7 +38,7 @@ func topKFrequent(arr []int, k int) []int {
     h := &MaxHeap{}
 	heap.Init(h)
     
-	// heapify
+
 	for n, f := range mp {
 		heap.Push(h, Item{
 			no:   n,

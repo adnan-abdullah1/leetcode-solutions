@@ -29,16 +29,15 @@ func (h *MaxHeap) Swap(i, j int) {
 
 
 func topKFrequent(arr []int, k int) []int {
-    h := &MaxHeap{}
-	heap.Init(h)
 
-	
-	
 	mp := make(map[int]int)
 	for _, v := range arr {
 		mp[v]++
 	}
 
+    h := &MaxHeap{}
+	heap.Init(h)
+    
 	// heapify
 	for n, f := range mp {
 		heap.Push(h, Item{

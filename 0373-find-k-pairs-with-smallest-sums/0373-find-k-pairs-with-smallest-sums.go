@@ -41,21 +41,22 @@ func kSmallestPairs(arr1 []int, arr2 []int, k int) [][]int {
 	h := &MaxHeap{}
 	heap.Init(h)
 
+	pushIntoHeap := func(i, j, sum int) {
+		heap.Push(h, T{
+			Sum: sum,
+			i:   i,
+			j:   j,
+		})
+	}
+
 	for i, v1 := range arr1 {
 		for j, v2 := range arr2 {
-				if h.Len() < k {
-				heap.Push(h, T{
-					Sum: v1 + v2,
-					i:   i,
-					j:   j,
-				})
+			if h.Len() < k {
+				pushIntoHeap(i, j, v1+v2)
+
 			} else if h.Top().(T).Sum > v1+v2 {
 				heap.Pop(h)
-				heap.Push(h, T{
-					Sum: v1 + v2,
-					i:   i,
-					j:   j,
-				})
+				pushIntoHeap(i, j, v1+v2)
 			} else {
 				break
 			}

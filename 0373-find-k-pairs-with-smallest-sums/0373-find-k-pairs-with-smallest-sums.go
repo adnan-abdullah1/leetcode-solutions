@@ -54,11 +54,13 @@ func kSmallestPairs(arr1 []int, arr2 []int, k int) [][]int {
 			if h.Len() < k {
 				pushIntoHeap(i, j, v1+v2)
 
-			} else if h.Top().(T).Sum > v1+v2 {
-				heap.Pop(h)
-				pushIntoHeap(i, j, v1+v2)
 			} else {
-				break
+				if h.Top().(T).Sum > v1+v2 {
+					heap.Pop(h)
+					pushIntoHeap(i, j, v1+v2)
+				} else {
+					break
+				}
 			}
 		}
 	}

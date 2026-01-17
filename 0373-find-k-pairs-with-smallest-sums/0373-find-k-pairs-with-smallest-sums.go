@@ -114,10 +114,10 @@ func kSmallestPairs(arr1, arr2 []int, k int) [][]int {
 	h := &MinHeap{}
 	heap.Init(h)
 
+	ans := [][]int{}
+
 	type key struct{ i, j int }
 	visited := make(map[struct{ i, j int }]bool)
-
-	ans := [][]int{}
 
 	pushToHeap := func(i, j, sum int) {
 		heap.Push(h, PairSum{
@@ -138,7 +138,7 @@ func kSmallestPairs(arr1, arr2 []int, k int) [][]int {
 	})
 
 	for k > 0 && h.Len() > 0 {
-        
+
 		d := heap.Pop(h).(PairSum)
 		ans = append(ans, []int{arr1[d.i], arr2[d.j]})
 

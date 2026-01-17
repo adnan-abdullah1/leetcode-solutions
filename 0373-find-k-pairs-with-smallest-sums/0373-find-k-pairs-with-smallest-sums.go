@@ -114,48 +114,53 @@ func kSmallestPairs(arr1, arr2 []int, k int) [][]int {
 	h := &MinHeap{}
 	heap.Init(h)
 
+	type key struct{ i, j int }
+	visited := make(map[struct{ i, j int }]bool)
+
 	ans := [][]int{}
+
+	pushToHeap := func(i, j, sum int) {
+		heap.Push(h, PairSum{
+			Sum: sum,
+			i:   i,
+			j:   j,
+		})
+	}
 
 	if len(arr1) == 0 && len(arr2) == 0 {
 		return ans
 	}
 
-	var i, j int
-	type key struct {
-		i, j int
-	}
-
-	visited := make(map[key]bool)
-
 	heap.Push(h, PairSum{
 		Sum: arr1[0] + arr2[0],
-		i:   i,
-		j:   j,
+		i:   0,
+		j:   0,
 	})
 
 	for k > 0 && h.Len() > 0 {
+        
 		d := heap.Pop(h).(PairSum)
 		ans = append(ans, []int{arr1[d.i], arr2[d.j]})
 
 		if d.i+1 < len(arr1) {
-			if !visited[key{i: d.i + 1, j: d.j}] {
-				heap.Push(h, PairSum{
-					Sum: arr1[d.i+1] + arr2[d.j],
-					i:   d.i + 1,
-					j:   d.j,
-				})
-				visited[key{i: d.i + 1, j: d.j}] = true
+
+			i := d.i + 1
+			j := d.j
+
+			if !visited[key{i: i, j: j}] {
+                pushToHeap(i,j,arr1[i] + arr2[j])
+				visited[key{i: i, j: j}] = true
 			}
 		}
 
 		if d.j+1 < len(arr2) {
-			if !visited[key{i: d.i, j: d.j + 1}] {
-				heap.Push(h, PairSum{
-					Sum: arr1[d.i] + arr2[d.j+1],
-					i:   d.i,
-					j:   d.j + 1,
-				})
-				visited[key{i: d.i, j: d.j + 1}] = true
+
+			i := d.i
+			j := d.j + 1
+
+			if !visited[key{i: i, j: j}] {
+				pushToHeap(i,j,arr1[i] + arr2[j])
+				visited[key{i: i, j: j}] = true
 			}
 
 		}

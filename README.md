@@ -149,6 +149,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0150-evaluate-reverse-polish-notation](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
+| [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [1248-count-number-of-nice-subarrays](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1248-count-number-of-nice-subarrays) |
 ## Simulation
 |  |
@@ -210,4 +211,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
+| [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
 <!---LeetCode Topics End-->

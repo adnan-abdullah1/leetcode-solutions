@@ -1,5 +1,5 @@
-func isPowerOfTwo(n int) bool {
-	
+func IterisPowerOfTwo(n int) bool {
+
 	if n <= 0 {
 		return false
 	}
@@ -9,4 +9,17 @@ func isPowerOfTwo(n int) bool {
 	}
 
 	return n == 1
+}
+
+func isPowerOfTwo(n int) bool {
+	if n == 1 {
+		return true
+	}
+    
+	if n <= 0 || n%2 != 0 {
+		return false
+	}
+
+	return isPowerOfTwo(n / 2)
+
 }

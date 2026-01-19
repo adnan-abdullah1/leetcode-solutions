@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0020-valid-parentheses](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0020-valid-parentheses) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
+| [0392-is-subsequence](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0392-is-subsequence) |
 | [0402-remove-k-digits](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0402-remove-k-digits) |
 | [0451-sort-characters-by-frequency](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -104,12 +105,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0027-remove-element) |
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0283-move-zeroes](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0283-move-zeroes) |
+| [0392-is-subsequence](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0392-is-subsequence) |
 | [1019-squares-of-a-sorted-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1019-squares-of-a-sorted-array) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
+| [0392-is-subsequence](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0392-is-subsequence) |
 ## Stack
 |  |
 | ------- |

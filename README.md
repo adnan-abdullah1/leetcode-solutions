@@ -150,6 +150,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
 | [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 | [1248-count-number-of-nice-subarrays](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1248-count-number-of-nice-subarrays) |
 ## Simulation
 |  |
@@ -207,9 +208,11 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
+| [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 ## Recursion
 |  |
 | ------- |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
+| [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 <!---LeetCode Topics End-->

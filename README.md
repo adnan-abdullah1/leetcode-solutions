@@ -13,6 +13,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0027-remove-element](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0027-remove-element) |
 | [0033-search-in-rotated-sorted-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0035-search-insert-position) |
+| [0039-combination-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
@@ -215,4 +216,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
+## Backtracking
+|  |
+| ------- |
+| [0039-combination-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0039-combination-sum) |
 <!---LeetCode Topics End-->

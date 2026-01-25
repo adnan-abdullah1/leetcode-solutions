@@ -1,4 +1,4 @@
-func myPow(x float64, n int) float64 {
+func ItermyPow(x float64, n int) float64 {
 	ans := 1.0
 
 	nn := n
@@ -20,4 +20,20 @@ func myPow(x float64, n int) float64 {
 		return 1 / ans
 	}
 	return ans
+}
+
+
+func myPow(x float64, n int) float64 {
+	if n == 0 {
+		return 1
+	}
+	if n < 0 {
+		return 1 / myPow(x, -n)
+	}
+	if n%2 == 0 {
+		return myPow(x*x, n/2)
+	} else {
+		return x * myPow(x, n-1)
+	}
+
 }

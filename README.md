@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0074-search-a-2d-matrix](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
+| [0078-subsets](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0078-subsets) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0084-largest-rectangle-in-histogram](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0084-largest-rectangle-in-histogram) |
 | [0150-evaluate-reverse-polish-notation](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0150-evaluate-reverse-polish-notation) |
@@ -209,6 +210,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0078-subsets](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0078-subsets) |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 ## Recursion
@@ -222,4 +224,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0039-combination-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0039-combination-sum) |
+| [0078-subsets](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0078-subsets) |
 <!---LeetCode Topics End-->

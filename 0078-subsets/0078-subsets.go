@@ -1,13 +1,23 @@
 func subsets(nums []int) [][]int {
-	res := [][]int{{}}
+	res := [][]int{}
+	ds := []int{}
 
-	for _, num := range nums { // num is 1,2
-		size := len(res)      // 1,2
-		for i := range size { // i=0, i=0
-			tmp := append([]int{}, res[i]...) // [1,2]
-			tmp = append(tmp, num)            //[1]
-			res = append(res, tmp)            // [{},[1]]
-		}
+	return sets(nums, 0, ds, &res)
+}
+
+func sets(nums []int, i int, ds []int, res *[][]int) [][]int {
+	if i == len(nums) {
+		tmp := make([]int, len(ds))
+		copy(tmp, ds)
+		*res = append(*res, tmp)
+		return *res
 	}
-	return res
+
+	ds = append(ds, nums[i])
+
+	sets(nums, i+1, ds, res)
+
+	ds = ds[:len(ds)-1]
+	sets(nums, i+1, ds, res)
+	return *res
 }

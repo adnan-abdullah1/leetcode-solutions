@@ -1,16 +1,17 @@
-func searchInsert(nums []int, target int) int {
-	var l, h = 0, len(nums) - 1
+func searchInsert(arr []int, target int) int {
+	if len(arr) == 0 {
+		return -1
+	}
 
-	for l <= h {
-		mid := (l + h) / 2
-		if nums[mid] == target {
-			return mid
-		} else if target > nums[mid] {
-			l = mid + 1
-		} else {
-			h = mid - 1
-
+	for i := range arr {
+		if target <= arr[i] { //1,3,5,6
+			return i
 		}
 	}
-	return l
+
+	if target > arr[len(arr)-1] {
+		return len(arr)
+	}
+
+	return -1
 }

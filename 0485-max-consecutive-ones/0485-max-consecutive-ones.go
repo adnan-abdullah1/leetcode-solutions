@@ -1,16 +1,19 @@
-func findMaxConsecutiveOnes(nums []int) int {
+func findMaxConsecutiveOnes(arr []int) int {
 	cnt := 0
-	maxCnt := 0
+	maxLen := 0
 
-	for _, v := range nums {
-		if v != 0 {
+	for j := range arr {
+		if arr[j] == 1 {
 			cnt++
-			if cnt > maxCnt {
-				maxCnt = cnt
-			}
 		} else {
+
 			cnt = 0
+
+		}
+		if cnt > maxLen {
+			maxLen = cnt
 		}
 	}
-	return maxCnt
+
+	return maxLen
 }

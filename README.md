@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0189-rotate-array) |
 | [0215-kth-largest-element-in-an-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [0283-move-zeroes](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0283-move-zeroes) |
 | [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0373-find-k-pairs-with-smallest-sums](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0373-find-k-pairs-with-smallest-sums) |
@@ -51,6 +52,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0003-longest-substring-without-repeating-characters](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0003-longest-substring-without-repeating-characters) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0496-next-greater-element-i](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0496-next-greater-element-i) |
@@ -75,6 +77,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0018-4sum) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
 | [0215-kth-largest-element-in-an-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [0347-top-k-frequent-elements](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0347-top-k-frequent-elements) |
 | [0451-sort-characters-by-frequency](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0451-sort-characters-by-frequency) |
 | [0853-car-fleet](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0853-car-fleet) |
@@ -87,6 +90,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0074-search-a-2d-matrix](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0081-search-in-rotated-sorted-array-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [1004-max-consecutive-ones-iii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1004-max-consecutive-ones-iii) |
 ## Matrix
 |  |
@@ -156,6 +160,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0189-rotate-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0189-rotate-array) |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [0326-power-of-three](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0326-power-of-three) |
 | [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 | [1248-count-number-of-nice-subarrays](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/1248-count-number-of-nice-subarrays) |
@@ -216,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0078-subsets](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0078-subsets) |
 | [0231-power-of-two](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0231-power-of-two) |
+| [0268-missing-number](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0268-missing-number) |
 | [0342-power-of-four](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0342-power-of-four) |
 ## Recursion
 |  |

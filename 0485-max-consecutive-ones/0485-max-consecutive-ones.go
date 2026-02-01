@@ -6,10 +6,9 @@ func findMaxConsecutiveOnes(arr []int) int {
 		if arr[j] == 1 {
 			cnt++
 		} else {
-
 			cnt = 0
-
 		}
+        
 		if cnt > maxLen {
 			maxLen = cnt
 		}

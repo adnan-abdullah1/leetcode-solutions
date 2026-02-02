@@ -16,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0039-combination-sum](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0039-combination-sum) |
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
 | [0049-group-anagrams](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0049-group-anagrams) |
+| [0053-maximum-subarray](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0053-maximum-subarray) |
 | [0074-search-a-2d-matrix](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0074-search-a-2d-matrix) |
 | [0075-sort-colors](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0075-sort-colors) |
 | [0078-subsets](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0078-subsets) |
@@ -105,6 +106,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Divide and Conquer
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0053-maximum-subarray) |
 | [0169-majority-element](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0169-majority-element) |
 | [0215-kth-largest-element-in-an-array](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0215-kth-largest-element-in-an-array) |
 | [0240-search-a-2d-matrix-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0240-search-a-2d-matrix-ii) |
@@ -126,6 +128,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0042-trapping-rain-water](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0042-trapping-rain-water) |
+| [0053-maximum-subarray](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0053-maximum-subarray) |
 | [0264-ugly-number-ii](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0264-ugly-number-ii) |
 | [0392-is-subsequence](https://github.com/adnan-abdullah1/leetcode-solutions/tree/master/0392-is-subsequence) |
 ## Stack

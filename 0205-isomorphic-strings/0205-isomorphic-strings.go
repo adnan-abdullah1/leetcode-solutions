@@ -11,7 +11,9 @@ func isIsomorphic(s, t string) bool {
 
 		}
 	}
-	mp = make(map[string]string)
+
+	clear(mp)
+    
 	for i, v := range t {
 		val, ok := mp[string(v)]
 		if ok {

@@ -1,33 +1,32 @@
 func frequencySort(str string) string {
-	mp := make(map[string]int)
-
-	for _, v := range str {
-		s := string(v)
-		val, _ := mp[s]
-		mp[s] = val + 1
-	}
+	mp := make(map[string]int, len(str))
 
 	type Pair struct {
 		ch  string
 		cnt int
 	}
 
-	paris := make([]Pair, 0, len(mp))
+	pairs := make([]Pair, 0, len(mp))
+
+	for _, v := range str {
+		val, _ := mp[string(v)]
+		mp[string(v)] = val + 1
+	}
 
 	for k, v := range mp {
-		paris = append(paris, Pair{
+		pairs = append(pairs, Pair{
 			ch:  k,
 			cnt: v,
 		})
 	}
 
-	sort.Slice(paris, func(i, j int) bool {
-		return paris[i].cnt > paris[j].cnt
+	sort.Slice(pairs, func(i, j int) bool {
+		return pairs[i].cnt > pairs[j].cnt
 	})
 
-	ans := ""
-	for _, v := range paris {
-		ans += strings.Repeat(v.ch, v.cnt)
+    ans := ""
+	for _, strct := range pairs {
+		ans += strings.Repeat(strct.ch, strct.cnt)
 	}
 
 	return ans
